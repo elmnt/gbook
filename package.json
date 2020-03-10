@@ -28,6 +28,7 @@
     "copy:css": "mkdir -p dist/css && copyfiles -u 2 src/css/styles.css dist/css",
     "copy:js": "mkdir -p dist/js && copyfiles -u 2 src/js/app.js dist/js",
     "copy:img": "mkdir -p dist/img && copyfiles -u 2 src/img/* dist/img",
+    "copy:docs": "mkdir -p dist/docs && copyfiles -u 2 src/docs/* dist/docs",
     "copy:html": "mkdir -p dist && copyfiles -u 1 src/*.html dist",
     "ship": "npm run copy:css && npm run copy:js && npm run copy:img && npm run copy:html",
     "clean": "rm -f src/css/*.css && rm -f src/js/app.js && rm -r dist",
